@@ -3,7 +3,7 @@ export const personalInfo = {
   fullName: "Andrés Jesús Quispe Caballero",
   role: "Software Architect & Senior Full Stack Developer",
   github: "drusystem",
-  specialties: [".NET 8", "React.js", "Flutter", "SQL Server"],
+  specialties: [".NET", "React.js", "Flutter", "SQL Server"],
   additional: ["Python", "NestJS", "Docker", "Kubernetes", "AWS", "Azure"],
   social: {
     github: "https://github.com/drusystem",
@@ -15,7 +15,7 @@ export const personalInfo = {
 export const skills = [
   {
     category: "Main Core Stack", // Este nombre debe coincidir con el filtro en page.tsx
-    items: [".NET 8", "React 19", "Next.js 15", "Web API", "Entity Framework"]
+    items: [".NET", "React", "Next.js", "Web API", "Entity Framework"]
   },
   {
     category: "Databases",
@@ -36,8 +36,8 @@ export const projects = [
   {
     id: "1",
     title: "Enterprise ERP Ecosystem",
-    description: "Arquitectura distribuida de alta disponibilidad. Backend robusto en .NET 8 con patrones CQRS y Frontend de alto rendimiento en React para gestión de activos críticos.",
-    tech: [".NET 8", "React", "SQL Server", "Azure"],
+    description: "Arquitectura distribuida de alta disponibilidad. Backend robusto en .NET con patrones CQRS y Frontend de alto rendimiento en React para gestión de activos críticos.",
+    tech: [".NET", "React", "SQL Server", "Azure"],
     repo: "https://github.com/drusystem/enterprise-erp",
     image: "/projects/erp-core.png"
   },
@@ -53,7 +53,7 @@ export const projects = [
     id: "3",
     title: "Healthcare Management System",
     description: "Sistema de gestión hospitalaria escalable. API RESTful bajo Clean Architecture y cliente web reactivo para la visualización de datos médicos en tiempo real.",
-    tech: [".NET 8", "React", "PostgreSQL", "Docker"],
+    tech: [".NET", "React", "PostgreSQL", "Docker"],
     repo: "https://github.com/drusystem/healthcare-system",
     image: "/projects/healthcare.png"
   },
