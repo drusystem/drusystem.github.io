@@ -3,7 +3,7 @@ export const personalInfo = {
   fullName: "Andrés Jesús Quispe Caballero",
   role: "Software Architect & Senior Full Stack Developer",
   github: "drusystem",
-  specialties: [".NET 8", "React.js", "Next.js", "Flutter"],
+  specialties: [".NET 8", "React.js", "Flutter", "SQL Server"],
   additional: ["Python", "NestJS", "Docker", "Kubernetes", "AWS", "Azure"],
   social: {
     github: "https://github.com/drusystem",
