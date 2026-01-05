@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   title: "Andrés Quispe | Software Architect & Sr. Full Stack Dev", 
   // Ajustado a 145 caracteres (Rango óptimo: 110-160)
   description: "Arquitecto de Software experto en .NET Core, React y Laravel. Especialista en sistemas escalables, microservicios y soluciones empresariales cloud.",
+  // Iconos
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
   openGraph: {
     title: "Andrés Quispe | Software Architect & Sr. Full Stack Dev",
     description: "Arquitecto de Software experto en .NET Core, React y Laravel. Especialista en sistemas escalables y soluciones cloud.",

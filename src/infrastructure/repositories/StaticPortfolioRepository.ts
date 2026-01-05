@@ -124,11 +124,11 @@ export class StaticPortfolioRepository implements IPortfolioRepository {
       },
       {
         id: "2",
-        title: "FinTech Transaction Engine",
-        description: "Motor de transacciones financieras con procesamiento asíncrono. Implementación de Next.js para el dashboard administrativo y .NET para el core de validación.",
-        technologies: ["Next.js", ".NET Core", "Redis", "RabbitMQ"],
-        repositoryUrl: "https://github.com/drusystem/fintech-engine",
-        imageUrl: "/projects/fintech.png",
+        title: "Flutter Cinema App",
+        description: "Aplicación móvil moderna para explorar películas usando The Movie Database (TMDB) API. Desarrollada con Flutter y siguiendo los principios de Clean Architecture.",
+        technologies: ["Flutter SDK", "Riverpod", "Go Router", "Dio","Drift"],
+        repositoryUrl: "https://github.com/drusystem/flutter_moviedb",
+        imageUrl: "/projects/cinema_app.png",
         featured: true
       },
       {
