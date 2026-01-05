@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Senior Professional Portfolio | Software Architecture
 
-## Getting Started
+Este repositorio contiene mi portafolio profesional, diseñado bajo principios de ingeniería de software de alto nivel. No es solo una landing page; es un sistema construido para demostrar capacidades en **Arquitectura Limpia (Clean Architecture)**, **Automatización (CI/CD)** y **Optimización de Performance**.
 
-First, run the development server:
+[![Deployment Pipeline](https://github.com/drusystem/drusystem.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/drusystem/drusystem.github.io/actions/workflows/deploy.yml)
+[![Performance Lighthouse](https://img.shields.io/badge/Lighthouse-100%2F100-brightgreen)](https://drusystem.github.io)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
+
+## 🏗️ System Architecture
+
+El proyecto implementa una versión pragmática de **Clean Architecture** adaptada al ecosistema Frontend moderno, garantizando la separación de intereses y la facilidad de mantenimiento.
+
+### Capas del Proyecto (Layered Pattern):
+
+1.  **Core (Domain Layer):** El "corazón" de la aplicación. Contiene las entidades de negocio (`Portfolio`, `Project`, `Skill`), Enums y las interfaces de repositorio (contratos). Es 100% agnóstico a frameworks.
+2.  **Infrastructure Layer:** Implementación de los contratos del dominio. Actualmente gestiona el origen de datos mediante el `StaticPortfolioRepository`, desacoplando la persistencia de la interfaz de usuario.
+3.  **Presentation Layer:** Construida con **React** y **Tailwind CSS v4**. Utiliza el patrón de "Sections" y "Atomic Components" para una UI modular.
+4.  **App Layer (Framework):** Entry points de Next.js (App Router) que orquestan la inyección de dependencias y el renderizado en el servidor.
+
+## 🛠️ Stack Tecnológico
+
+-   **Framework:** Next.js 15 (App Router) + TypeScript.
+-   **Estilos:** Tailwind CSS v4 (Engine de alto rendimiento).
+-   **Arquitectura:** Clean Architecture + Repository Pattern + SOLID Principles.
+-   **Despliegue:** GitHub Actions (Pipeline automatizado de CI/CD).
+-   **SEO:** Open Graph Protocol & JSON-LD dinámico.
+
+## 📈 Engineering Best Practices & SEO
+
+-   **Core Web Vitals:** Optimización agresiva de imágenes y fuentes para lograr un LCP (Largest Contentful Paint) mínimo.
+-   **SEO Senior:** Implementación de metadatos dinámicos y Open Graph cards personalizadas para asegurar impacto visual en LinkedIn y Twitter.
+-   **Type Safety:** Tipado estricto en todas las capas para garantizar la integridad de los datos desde el repositorio hasta el componente.
+-   **Accessibility (A11y):** Uso de marcado semántico HTML5 y cumplimiento de estándares de accesibilidad para lectores de pantalla.
+
+## ⚙️ DevOps & CI/CD Pipeline
+
+El flujo de entrega continua está totalmente automatizado:
+1.  **Integración:** Cada `push` a la rama `main` dispara un workflow de validación.
+2.  **Build:** GitHub Actions levanta un entorno virtual (Ubuntu), instala dependencias y ejecuta `next build` con exportación estática (SSG).
+3.  **Deployment:** Publicación atómica y automática en **GitHub Pages**.
+
+## 👨‍💻 Instalación y Desarrollo
 
 ```bash
+# 1. Clonar el repositorio
+git clone [https://github.com/drusystem/drusystem.github.io.git](https://github.com/drusystem/drusystem.github.io.git)
+
+# 2. Instalar dependencias
+npm install
+
+# 3. Levantar entorno de desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 4. Validar build de producción
+npm run build

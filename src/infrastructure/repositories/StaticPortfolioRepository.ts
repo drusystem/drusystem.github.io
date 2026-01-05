@@ -115,11 +115,11 @@ export class StaticPortfolioRepository implements IPortfolioRepository {
     return [
       {
         id: "1",
-        title: "Enterprise ERP Ecosystem",
-        description: "Arquitectura distribuida de alta disponibilidad. Backend robusto en .NET con patrones CQRS y Frontend de alto rendimiento en React para gestión de activos críticos.",
-        technologies: [".NET", "React", "SQL Server", "Azure"],
-        repositoryUrl: "https://github.com/drusystem/enterprise-erp",
-        imageUrl: "/projects/erp-core.png",
+        title: "Professional Engineering Portfolio",
+        description: "Sistema de marca personal arquitectado bajo principios Clean y SOLID. Implementa un pipeline de CI/CD automatizado y optimización SEO avanzada para perfiles de alto impacto.",
+        technologies: ["Next.js 15", "TypeScript", "Clean Architecture", "GitHub Actions"],
+        repositoryUrl: "https://github.com/drusystem/drusystem.github.io",
+        imageUrl: "/projects/portafolio.png",
         featured: true
       },
       {
