@@ -126,18 +126,18 @@ export class StaticPortfolioRepository implements IPortfolioRepository {
         id: "2",
         title: "Flutter Cinema App",
         description: "Aplicación móvil moderna para explorar películas usando The Movie Database (TMDB) API. Desarrollada con Flutter y siguiendo los principios de Clean Architecture.",
-        technologies: ["Flutter SDK", "Riverpod", "Go Router", "Dio","Drift"],
+        technologies: ["Flutter SDK", "Riverpod", "GoRouter", "Dio","Drift"],
         repositoryUrl: "https://github.com/drusystem/flutter_moviedb",
         imageUrl: "/projects/cinema_app.png",
         featured: true
       },
       {
         id: "3",
-        title: "Healthcare Management System",
-        description: "Sistema de gestión hospitalaria escalable. API RESTful bajo Clean Architecture y cliente web reactivo para la visualización de datos médicos en tiempo real.",
-        technologies: [".NET", "React", "PostgreSQL", "Docker"],
-        repositoryUrl: "https://github.com/drusystem/healthcare-system",
-        imageUrl: "/projects/healthcare.png",
+        title: "Flutter Template App",
+        description: "Este proyecto es un showcase completo de componentes y funcionalidades de Flutter, diseñado para demostrar habilidades en desarrollo móvil multiplataforma. Implementa una arquitectura limpia y escalable utilizando las últimas tecnologías del ecosistema Flutter.",
+        technologies: ["Flutter SDK", "Material Design 3", "Riverpod", "GoRouter"],
+        repositoryUrl: "https://github.com/drusystem/flutter_template",
+        imageUrl: "/projects/template_app.png",
         featured: true
       },
       {
