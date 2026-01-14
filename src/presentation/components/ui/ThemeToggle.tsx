@@ -13,7 +13,7 @@ export const ThemeToggle = () => {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="fixed top-6 right-6 p-3 rounded-xl bg-slate-100 dark:bg-surface border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-all z-50 group"
+      className="fixed top-4 right-4 max-w-[calc(100vw-1rem)] p-3 rounded-xl bg-slate-100 dark:bg-surface border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-all z-50 group"
       aria-label="Toggle Theme"
     >
       <span className="text-xl group-hover:scale-110 block transition-transform">
