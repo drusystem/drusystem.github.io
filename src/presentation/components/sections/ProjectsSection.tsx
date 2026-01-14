@@ -10,7 +10,8 @@ export const ProjectsSection = ({ projects, githubUrl }: ProjectsProps) => {
   return (
     <section id="projects" className="space-y-12">
       {/* HEADER DE SECCIÓN */}
-      <div className="flex items-center gap-4 border-b border-slate-100 dark:border-slate-800 pb-8">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-4 border-b border-slate-100 dark:border-slate-800 pb-8">
+
         <h2 className="text-3xl font-bold tracking-tight shrink-0">
           Proyectos de Ingeniería
         </h2>
@@ -19,7 +20,7 @@ export const ProjectsSection = ({ projects, githubUrl }: ProjectsProps) => {
           href={githubUrl} 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-xs font-black tracking-widest text-primary hover:opacity-70 uppercase transition-opacity"
+          className="text-xs font-black tracking-widest text-primary hover:opacity-70 uppercase transition-opacity self-start sm:self-auto"
         >
           Ver repositorio completo →
         </a>
