@@ -114,6 +114,15 @@ export class StaticPortfolioRepository implements IPortfolioRepository {
   getProjects(): Project[] {
     return [
       {
+        id: "0",
+        title: "E-Commerce Microservices Platform",
+        description: "Plataforma E-Commerce basada en arquitectura de microservicios desarrollada con .NET, que implementa un API Gateway (YARP) para la orquestación de servicios independientes como Catálogo, Pedidos, Inventario y Usuarios. El sistema sigue un enfoque Event-Driven utilizando RabbitMQ o Azure Service Bus, aplicando patrones avanzados como CQRS, Event Sourcing y Saga para garantizar escalabilidad, consistencia y resiliencia. Toda la solución está contenerizada con Docker y orquestada con Kubernetes, incorporando observabilidad mediante OpenTelemetry para monitoreo, trazabilidad distribuida y métricas de rendimiento en entornos productivos.",
+        technologies: [".NET 10", "Docker", "YARP (API Gateway)", "PostgreSQL / SQL Server"],
+        repositoryUrl: "https://github.com/drusystem/dotnet-ecommerce-microservices-platform",
+        imageUrl: "/projects/dotnet-microservicios.png",
+        featured: true
+      },
+      {
         id: "1",
         title: "Professional Engineering Portfolio",
         description: "Sistema de marca personal arquitectado bajo principios Clean y SOLID. Implementa un pipeline de CI/CD automatizado y optimización SEO avanzada para perfiles de alto impacto.",
@@ -158,15 +167,6 @@ export class StaticPortfolioRepository implements IPortfolioRepository {
         imageUrl: "/projects/scraper.png",
         featured: false
       },
-      {
-        id: "6",
-        title: "Mobile Inventory App",
-        description: "Aplicación móvil multiplataforma para control de inventarios. Sincronización offline-first y backend ligero en NestJS.",
-        technologies: ["Flutter", "NestJS", "SQLite", "Firebase"],
-        repositoryUrl: "https://github.com/drusystem/flutter-inventory",
-        imageUrl: "/projects/mobile-app.png",
-        featured: false
-      }
     ];
   }
 }
